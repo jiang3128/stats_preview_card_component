@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
-
+/* Initialize the whole project  */
 *{
     margin:0%;
     padding:0%;
     z-index: 0;
 }
+/* Using flex box to format the child position */
 .card{
     background: hsl(233,47%, 7%);
     display: flex;
@@ -13,8 +14,8 @@
     align-items: center;
     width:100%;
     height: 100vh;
-    
 }
+/* The content box  */
 .box{
     width: 450px;
     height: 350px;
@@ -22,9 +23,11 @@
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+/* Space around the box */
 .text-area{
     padding:10%;
 }
+/* The main header fonts*/
 .header-text{
     font-size: 2rem;
     font-family: 'Inter', sans-serif;
@@ -35,6 +38,7 @@
 .header-text a{
     color:hsl(277, 64%, 61%);
 }
+/* The sub-header fonts*/
 .sub-header-text{
     font-family: 'Inter', sans-serif;
     padding-top:10%;
@@ -42,6 +46,7 @@
     color:hsla(0, 0%, 100%, 0.6);
     line-height: 25px;
 }
+/* The number and iindicator alignments*/
 .inner-box{
     margin: 0%;
     padding: 0%;
@@ -59,12 +64,14 @@
     font-size: 15px;
     color:hsla(0, 0%, 100%, 0.6);
 }
+/* Initializing the photo-image size */
 .photo{
     width:450px;
     height:350px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+/* The overlay color on the photo-image*/
 .overlay{
     width:450px;
     height:350px;
@@ -84,6 +91,7 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+/*footer honoring Frontend Mentor*/
 .attribution { 
     position: relative;
     bottom: 1%;
@@ -95,7 +103,9 @@
     color: hsl(228, 45%, 44%); 
 }
 
-@media only screen and (max-width:1200px) {
+/*Mobile design and here I set as the breakpoint to 1200px*/
+@media only screen and (max-width:860px) {
+    /*To show downwards*/
     .card{
         padding-top: 10%;
         padding-bottom: 10%;
@@ -104,7 +114,7 @@
     }
     .box{
         width: 300px;
-        height: 600px;
+        height: 450px;
         background:hsl(244, 38%, 16%);
         border-top-left-radius: 0px;
         border-bottom-left-radius: 15px;
